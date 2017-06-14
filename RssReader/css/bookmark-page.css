@@ -1,0 +1,37 @@
+#bookmark-page {
+  height: 4rem;
+  width: 4rem;
+  background-color: inherit;
+  border: 0;
+  color: white;
+}
+
+.deleteallbookmark {
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  left:50%;
+  background-color: inherit;
+  border: 0;
+  color: white;
+
+}
+.delete-bookmark-btn {
+  height: 3rem;
+  width: 3rem;
+  background-color: inherit;
+  border: 0;
+  color: white;
+}
+.bookmark-title {
+  color: black;
+}
+
+#bookmark-page a {
+  color: white;
+  height: 3rem;
+  width: 3rem;
+}
+#bookmark-page li {
+  color: white;
+}

@@ -1,0 +1,92 @@
+#menu {
+    background-color: skyblue;
+    opacity: 1;
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: .5s;
+    white-space: nowrap;
+    color: white;
+    /*スクロールバーの導入*/
+    overflow: scroll;
+    /* TODO:  */
+    /*background-color: 仮の色を設定、開発中にわかりやすくするため
+opacity: 一旦メニューを透明にし、ページの本文がどこにあるか確認できるようにする
+height: メニューをブラウザーの高さと同じにする
+width: 仮の横幅を設定する
+position: 位置を固定にする
+z-index: メニューを開く時に、本文の上に表示するためのプロパティー
+top: メニューを一番上に配置する
+left: メニューを一番左に配置する
+overflow-x: テキストを非表示にする
+transition: メニューを表示する際にアニメーションを追加する。
+white-space: メニューテキストの改行を禁止
+*/
+}
+
+#menu.opened {
+    width: 40%;
+}
+
+
+/* TODO:  */
+
+
+/*追加機能
+メニューから一覧のページをクリックすると
+閉じるようにする。*/
+
+#menu.closed {
+    width: 0%;
+}
+
+.menu-btn {
+    height: 4rem;
+    width: 4rem;
+    background-color: inherit;
+    border: 0;
+    color: inherit;
+}
+
+#menu header {
+    position: relative;
+    height: 6rem;
+    border-bottom: 1px solid #fff;
+}
+
+#menu header h2, #menu header nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0, -50%);
+}
+
+#menu header h2 {
+    left: 1rem;
+}
+
+#menu header nav {
+    right: 0.5rem;
+}
+
+#menu article {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #e8e9ff;
+}
+
+#add-favorite-form {
+    width: 100%;
+}

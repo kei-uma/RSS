@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta chraset="utf-8">
+    <title>Rss Reader</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/feed.js"></script>
+    <script src="js/favorite.js"></script>
+    <script src="js/bookmark.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <link rel="stylesheet" type="text/css" href="css/bookmark-page.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <button class="menu-btn"><i class="fa fa-bars"></i></button>
+        </nav>
+        <h1>Rss Reader</h1>
+    </header>
+    <aside id="menu">
+        <section>
+            <nav>
+                <button class="menu-btn"><i class="fa fa-close fa-3x"></i></button>
+            </nav>
+
+            <h2>メニュー</h2>
+            <article>
+                <h3>お気に入り</h3>
+                <ul id="favorites-list">
+                    <li>フィード1<button>ダウンロード</button></li>
+                </ul>
+                <form id="add-favorite-form">
+                    <input name="add-favorite-url" type="text" placeholder="URL" required>
+                    <input name="add-favorite-btn" type="submit" value="登録">
+                </form>
+            </article>
+        </section>
+        <article id="bookmark-page">
+            <h3>ブックマーク</h3>
+            <ul id="bookmarks-list"></ul>
+            <!-- <li><a href="" target="_blank">ブックマーク</a></li> -->
+            <!-- </ul> -->
+            <nav>
+                <button class="deleteallbookmark">ALL<i class="fa fa-trash fa-3x"></i></button>
+            </nav>
+        </article>
+    </aside>
+    <section id="page">
+
+        <div id="loading"><i class="fa fa-cog fa-spin fa-5x"></i></div>
+        <header>
+            <h2 id="artticle-head">一覧</h2>
+        </header>
+        <div id="feed-articles"></div>
+
+        <!-- <article>
+
+              <h3>情報1</h3>
+              <p>内容1</p>
+              <a href="">もっとみる</a>
+              <button>登録</button>
+            </article>
+
+            <article>
+              <h3>情報2</h3>
+              <p>内容2</p>
+              <a href="">もっとみる</a>
+              <button>登録</button>
+            </article> -->
+    </section>
+    <footer id="footer">
+        <input id="feed-filter" type="text" placeholder="検索する...">
+    </footer>
+</body>
+
+</html>

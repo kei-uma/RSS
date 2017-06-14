@@ -1,0 +1,15 @@
+#footer {
+    background-color: rgba(0, 255, 3, 0.61);
+    /*opacity: 0.5;*/
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 6rem;
+    text-align: center;
+}
+
+#footer input {
+    margin: 1rem;
+    width: 80%;
+    font-size: 2rem;
+}

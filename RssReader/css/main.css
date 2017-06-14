@@ -1,0 +1,28 @@
+.hidden {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    /*フォントの要素を並べる*/
+    font-family: "Roboto Condensed", Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "游ゴシック", YuGothic, sans-serif;
+    background-color: #fff;
+}
+
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+button:hover {
+    /*カーソルの形を指定*/
+    cursor: pointer;
+}
